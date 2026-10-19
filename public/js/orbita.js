@@ -18,7 +18,7 @@ AFRAME.registerComponent("orbita", {
     this.el.setObject3D("trayectoria", anillo);
   },
   tick: function (tiempo, delta) {
-    if (!delta || !this.el.getAttribute("visible")) return;
+    if (!delta) return;
     const radianes = (this.data.velocidad * Math.PI / 180) * (delta / 1000);
     this.el.object3D.rotation.y += radianes;
   },

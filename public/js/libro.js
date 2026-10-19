@@ -1,9 +1,9 @@
 const textos = {
-  1: "El Sol es una estrella y aporta energía a la Tierra. Observa el modelo amarillo. ¿Qué lo diferencia de un planeta?",
-  2: "Mercurio, Venus, Tierra y Marte son planetas rocosos. Identifica la Tierra azul y ordena los cuatro desde el Sol.",
-  3: "Júpiter y Saturno son gigantes gaseosos; Urano y Neptuno, gigantes helados. ¿Qué planeta aparece con un anillo?",
-  4: "Rotación es girar sobre el propio eje; traslación es recorrer la órbita. Sigue el punto verde de la Tierra y pulsa Pausar.",
-  5: "El sistema solar tiene ocho planetas. Recorre su orden desde el Sol. Plutón se clasifica como planeta enano."
+  1: "Descripción del problema: El cambio climático es la alteración a largo plazo de las temperaturas globales, impulsada por la acumulación excesiva de gases de efecto invernadero que atrapan el calor en la Tierra.",
+  2: "Causas principales: La quema de combustibles fósiles (carbón, petróleo, gas), la deforestación masiva de bosques y las industrias no reguladas han elevado los niveles de CO2 a récords históricos.",
+  3: "Consecuencias globales: Provoca el deshielo acelerado de glaciares, la subida del nivel del mar, olas de calor extremas y la pérdida irreversible de biodiversidad marina y terrestre.",
+  4: "Datos e impacto en el Perú: El Perú es uno de los países más vulnerables del mundo. En los últimos 50 años ha perdido más del 50% de la superficie de sus glaciares andinos, afectando el suministro de agua.",
+  5: "Formas de prevención y mitigación: Transición hacia energías renovables (solar y eólica), reforestación activa, movilidad eléctrica y fomento de una economía circular responsable."
 };
 
 const selector = document.querySelector("#pagina");
@@ -33,7 +33,7 @@ boton.addEventListener("click", () => {
 });
 
 marcador.addEventListener("markerFound", () => {
-  estado.textContent = "Marcador detectado. Selecciona tu página.";
+  estado.textContent = "Marcador detectado. Selecciona una sección temática.";
 });
 
 marcador.addEventListener("markerLost", () => {

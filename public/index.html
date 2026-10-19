@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Libro del sistema solar con RA</title>
+  <title>Libro Didáctico: Cambio Climático en RA</title>
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/3.4.7/aframe/build/aframe-ar.js"></script>
@@ -13,24 +13,25 @@
 </head>
 <body>
   <section id="panel" aria-label="Controles del libro">
-    <label for="pagina">Página del libro</label>
+    <label for="pagina"><strong>Sección del Libro</strong></label>
     <select id="pagina">
-      <option value="1">1 El Sol</option>
-      <option value="2">2 Planetas rocosos</option>
-      <option value="3">3 Planetas gigantes</option>
-      <option value="4">4 Rotación y traslación</option>
-      <option value="5">5 El sistema completo</option>
+      <option value="1">1. Descripción del problema</option>
+      <option value="2">2. Causas principales</option>
+      <option value="3">3. Consecuencias globales</option>
+      <option value="4">4. Estadísticas e impacto (Perú)</option>
+      <option value="5">5. Prevención y soluciones</option>
     </select>
     <p id="contenido"></p>
     <button id="pausa" type="button">Pausar</button>
-    <p id="estado" role="status">Permite la cámara y enfoca Hiro.</p>
-    <small>Modelo didáctico sin escala real.</small>
+    <p id="estado" role="status">Permite la cámara y enfoca el marcador Hiro.</p>
+    <small>Modelo interactivo 3D con Realidad Aumentada.</small>
   </section>
+
   <a-scene embedded vr-mode-ui="enabled: false"
     renderer="alpha: true; antialias: true"
     arjs="sourceType: webcam; debugUIEnabled: false;">
     <a-marker id="marcador" preset="hiro" emitevents="true">
-      <a-entity id="sistema" sistema-solar position="0 0.15 0" scale="0.22 0.22 0.22"></a-entity>
+      <a-entity id="sistema" sistema-solar position="0 0.15 0" scale="0.25 0.25 0.25"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
